@@ -1,0 +1,17 @@
+﻿<Window x:Class="StudentInfoSystem.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentInfoSystem"
+        mc:Ignorable="d"
+        Title="Избиране на опция" Height="400" Width="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnStudInfo" Grid.Row="0" Content="Преглед на студент по фак. номер" HorizontalAlignment="Center" VerticalAlignment="Center" Height="75" Width="210" Click="OnClick_ShowStudentInfo"/>
+        <Button x:Name="showAll" Grid.Row="1" Content="Преглед на всички студенти" HorizontalAlignment="Center" VerticalAlignment="Center" Height="75" Width="210" Click="OnClick_ShowAll"/>
+    </Grid>
+</Window>
